@@ -1609,27 +1609,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Win Menu
       objectReference: {fileID: 0}
-    - target: {fileID: 5211560487570233036, guid: 24d9dcbfe109748d8948cae16234120e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5211560487686782503, guid: 24d9dcbfe109748d8948cae16234120e,
-        type: 3}
-      propertyPath: m_Text
-      value: Next couple!
-      objectReference: {fileID: 0}
-    - target: {fileID: 5211560487804322411, guid: 24d9dcbfe109748d8948cae16234120e,
-        type: 3}
-      propertyPath: m_Text
-      value: You fixed their relationship!
-      objectReference: {fileID: 0}
     - target: {fileID: 5211560487931847894, guid: 24d9dcbfe109748d8948cae16234120e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 4573195572141178409}
-    - target: {fileID: 6649943348603142423, guid: 24d9dcbfe109748d8948cae16234120e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
