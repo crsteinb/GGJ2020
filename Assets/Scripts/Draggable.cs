@@ -44,6 +44,7 @@ public class Draggable : MonoBehaviour {
     }
 
     void OnMouseDown() {
+        FindObjectOfType<AudioManager>().Play("Pickup");
         isDragging = true;
         myRigidbody.isKinematic = true; 
         foreach(var dragSurface in dragSurfaces){
@@ -53,15 +54,16 @@ public class Draggable : MonoBehaviour {
     }
 
     void OnMouseUp () {
-        Debug.Log("OnMouseUp");
+        
         isDragging = false;
         myRigidbody.isKinematic = false;
         foreach(var dragSurface in dragSurfaces){
             dragSurface.gameObject.GetComponent<Collider>().enabled = false;
-            Debug.Log("collidingSlot : " + collidingSlot);
             if (collidingSlot != null) {
-                Debug.Log("do AttachPart");
+                FindObjectOfType<AudioManager>().Play("Snap");
                 collidingSlot.AttachPart(gameObject.GetComponent<Part>());
+            } else {
+                FindObjectOfType<AudioManager>().Play("Drop");
             }
         }
     }

@@ -26,6 +26,7 @@ public class Slot : MonoBehaviour
   private void OnTriggerEnter(Collider other) {
     var part = other.gameObject.GetComponent<Part>();
     if(part != null) {
+      FindObjectOfType<AudioManager>().Play("ClickFuzz");
       part.gameObject.GetComponent<Draggable>().collidingSlot = gameObject.GetComponent<Slot>();
       highlight();
       heartArea.highlight();
@@ -36,6 +37,7 @@ public class Slot : MonoBehaviour
   private void OnTriggerExit(Collider other) {
     var part = other.gameObject.GetComponent<Part>();
     if(part != null) {
+      FindObjectOfType<AudioManager>().Play("ClickFuzz Low");
       unHighlight();
       heartArea.unHighlight();
       part.gameObject.GetComponent<Draggable>().collidingSlot = null;
