@@ -15,5 +15,5 @@ MonoBehaviour:
   Waveform: 2
   LeftPolarity: -1
   RightPolarity: -1
-  LeftOctave: 2
-  RightOctave: 2
+  LeftOctave: 1
+  RightOctave: 1

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PumpLowBluePart-NegativeOctaves
   m_EditorClassIdentifier: 
   Waveform: 1
-  LeftPolarity: -1
-  RightPolarity: -1
+  LeftPolarity: 1
+  RightPolarity: 1
   LeftOctave: -1
   RightOctave: -1
