@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7150e8ba73359401aa495016b1785bf7, type: 3}
   m_Name: Round1
   m_EditorClassIdentifier: 
-  leftRobotPrefab: {fileID: -8791411418212982803, guid: 766a2bd34f6ea49d7b36d21f9ddd3e01,
+  leftRobotPrefab: {fileID: 431960618641793005, guid: 766a2bd34f6ea49d7b36d21f9ddd3e01,
     type: 3}
-  rightRobotPrefab: {fileID: -8791411418212982803, guid: 766a2bd34f6ea49d7b36d21f9ddd3e01,
+  rightRobotPrefab: {fileID: 789488056768158484, guid: 19560d747e5df45168d5c00b1c760272,
     type: 3}
