@@ -801,27 +801,18 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 565014696812043896}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1527460513 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 752372477716371552, guid: aee114d8fb2a34e938040730f468c387,
+--- !u!114 &1527460514 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1527460515, guid: aee114d8fb2a34e938040730f468c387,
     type: 3}
   m_PrefabInstance: {fileID: 752372478296716068}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1527460515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1527460513}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c99cd71006ac041f0a254566331a42e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parts: {fileID: 0}
-  PartPrefab: {fileID: 6432738938664632739, guid: 44f9c5937a1e241989c1b9506953c05f,
-    type: 3}
 --- !u!1 &1530969827
 GameObject:
   m_ObjectHideFlags: 0
@@ -1490,5 +1481,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22d1d13eebfda477e90848babfaae2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partsDropper: {fileID: 1527460515}
+  partsDropper: {fileID: 1527460514}
   roundManager: {fileID: 253904512}

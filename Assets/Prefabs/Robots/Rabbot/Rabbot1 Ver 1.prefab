@@ -7,12 +7,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8791411418212982803, guid: c91517980b6ef458d8b7ad236d3b9bc7,
+        type: 3}
+      propertyPath: StartingOctave
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8791411418212982803, guid: c91517980b6ef458d8b7ad236d3b9bc7,
+        type: 3}
+      propertyPath: StartingPolarity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2557187581304394666, guid: c91517980b6ef458d8b7ad236d3b9bc7,
         type: 3}
       propertyPath: StartingOctave
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5304652601609219817, guid: c91517980b6ef458d8b7ad236d3b9bc7,
+        type: 3}
+      propertyPath: m_Name
+      value: Rabbot1 Ver 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8007325393078887086, guid: c91517980b6ef458d8b7ad236d3b9bc7,
         type: 3}
       propertyPath: m_Name
       value: Rabbot1 Ver 1

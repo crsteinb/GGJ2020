@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 public class PartsDropper : MonoBehaviour {
-
-    public GameObject Parts;
-    public GameObject PartPrefab;
     public GameObject[] prefabs;
 
     public void drop() {
