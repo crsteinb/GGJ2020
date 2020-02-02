@@ -13,13 +13,15 @@ public class Draggable : MonoBehaviour {
     DragSurface[] dragSurfaces;
     #endregion
 
+    public Slot collidingSlot;
+
     #region Unity Functions
     void Start () {
         myRigidbody = GetComponent<Rigidbody>();
         // zPosition = mainCamera.WorldToScreenPoint(transform.position).z;
         dragSurfaces = FindObjectsOfType<DragSurface>();
         foreach(var dragSurface in dragSurfaces){
-            dragSurface.gameObject.SetActive(false);
+            dragSurface.gameObject.GetComponent<Collider>().enabled = false;
         }
     }
 
@@ -45,16 +47,22 @@ public class Draggable : MonoBehaviour {
         isDragging = true;
         myRigidbody.isKinematic = true; 
         foreach(var dragSurface in dragSurfaces){
-            dragSurface.gameObject.SetActive(true);
+            dragSurface.gameObject.GetComponent<Collider>().enabled = true;
         } 
         UpdateTransformToDragSurface();
     }
 
     void OnMouseUp () {
+        Debug.Log("OnMouseUp");
         isDragging = false;
         myRigidbody.isKinematic = false;
         foreach(var dragSurface in dragSurfaces){
-            dragSurface.gameObject.SetActive(false);
+            dragSurface.gameObject.GetComponent<Collider>().enabled = false;
+            Debug.Log("collidingSlot : " + collidingSlot);
+            if (collidingSlot != null) {
+                Debug.Log("do AttachPart");
+                collidingSlot.AttachPart(gameObject.GetComponent<Part>());
+            }
         }
     }
     #endregion
