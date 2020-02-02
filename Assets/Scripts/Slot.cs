@@ -44,7 +44,6 @@ public class Slot : MonoBehaviour
       part.gameObject.GetComponent<Draggable>().collidingSlot = gameObject.GetComponent<Slot>();
       highlight();
       heartArea.highlight();
-      AttachPart(part);
     }
   }
 
@@ -62,7 +61,7 @@ public class Slot : MonoBehaviour
 
   public void highlight()
   {
-    gameObject.GetComponent<Renderer>().materials[0].color = Color.green;
+    gameObject.GetComponent<Renderer>().materials[0].color = Color.red;
   }
 
   public void unHighlight()
