@@ -224,6 +224,7 @@ MonoBehaviour:
   leftRobotHolder: {fileID: 565014696812043898}
   rightRobotHolder: {fileID: 565014696812043897}
   partsDropper: {fileID: 0}
+  remainingTime: 0
 --- !u!4 &253904513
 Transform:
   m_ObjectHideFlags: 0
@@ -1611,7 +1612,17 @@ PrefabInstance:
     - target: {fileID: 5211560487570233036, guid: 24d9dcbfe109748d8948cae16234120e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5211560487686782503, guid: 24d9dcbfe109748d8948cae16234120e,
+        type: 3}
+      propertyPath: m_Text
+      value: Next couple!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5211560487804322411, guid: 24d9dcbfe109748d8948cae16234120e,
+        type: 3}
+      propertyPath: m_Text
+      value: You fixed their relationship!
       objectReference: {fileID: 0}
     - target: {fileID: 5211560487931847894, guid: 24d9dcbfe109748d8948cae16234120e,
         type: 3}
@@ -1636,6 +1647,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Title Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3250216403589298221, guid: c8266f373ec164e5b8b0c5e4258aea81,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3250216403589298225, guid: c8266f373ec164e5b8b0c5e4258aea81,
         type: 3}
