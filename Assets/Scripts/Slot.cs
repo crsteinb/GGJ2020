@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
@@ -10,7 +10,13 @@ public class Slot : MonoBehaviour
   public Action PartChanged;
   public HeartArea heartArea;
 
-  public void AttachPart(Part partToAttach) {
+  public Part GetCurrentPart()
+  {
+    return currentPart_;
+  }
+
+  public void AttachPart(Part partToAttach)
+  {
     currentPart_ = partToAttach;
     if(partToAttach != null) {
       partToAttach.transform.position = transform.position;

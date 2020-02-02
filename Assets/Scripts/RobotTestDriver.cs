@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class RobotTestDriver : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+  public Robot leftRobot;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  public Robot rightRobot;
+
+  public List<Part> parts;
+
 }

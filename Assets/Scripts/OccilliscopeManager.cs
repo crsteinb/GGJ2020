@@ -40,6 +40,7 @@ public class OccilliscopeManager : MonoBehaviour
 
   public void ConnectRobots(Robot leftRobot, Robot rightRobot)
   {
+    // register event handlers
     if (leftRobot_ != null)
     {
       leftRobot_.WaveformChanged -= UpdateScopes;
@@ -53,6 +54,10 @@ public class OccilliscopeManager : MonoBehaviour
 
     leftRobot_.WaveformChanged += UpdateScopes;
     rightRobot_.WaveformChanged += UpdateScopes;
+
+    // initialize the scopes for the new robots
+    UpdateScopes(leftRobot);
+    UpdateScopes(rightRobot);
   }
 
   public void UpdateScopes(Robot robot)
