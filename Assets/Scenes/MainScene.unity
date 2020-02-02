@@ -1052,6 +1052,51 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 440183997238327700, guid: bc100c06bd62543748395d98a7c7ae88,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 440183997238327700, guid: bc100c06bd62543748395d98a7c7ae88,
+        type: 3}
+      propertyPath: sounds.Array.data[8].name
+      value: TouchIn Machine
+      objectReference: {fileID: 0}
+    - target: {fileID: 440183997238327700, guid: bc100c06bd62543748395d98a7c7ae88,
+        type: 3}
+      propertyPath: sounds.Array.data[8].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8aa0a4b5de20243c8b100797c42a5274, type: 3}
+    - target: {fileID: 440183997238327700, guid: bc100c06bd62543748395d98a7c7ae88,
+        type: 3}
+      propertyPath: sounds.Array.data[8].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 440183997238327700, guid: bc100c06bd62543748395d98a7c7ae88,
+        type: 3}
+      propertyPath: sounds.Array.data[8].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 440183997238327700, guid: bc100c06bd62543748395d98a7c7ae88,
+        type: 3}
+      propertyPath: sounds.Array.data[9].name
+      value: TouchOut Machine
+      objectReference: {fileID: 0}
+    - target: {fileID: 440183997238327700, guid: bc100c06bd62543748395d98a7c7ae88,
+        type: 3}
+      propertyPath: sounds.Array.data[9].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 228f8066988d34079bd4d238db694e41, type: 3}
+    - target: {fileID: 440183997238327700, guid: bc100c06bd62543748395d98a7c7ae88,
+        type: 3}
+      propertyPath: sounds.Array.data[9].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 440183997238327700, guid: bc100c06bd62543748395d98a7c7ae88,
+        type: 3}
+      propertyPath: sounds.Array.data[9].pitch
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3204721208101294607, guid: bc100c06bd62543748395d98a7c7ae88,
         type: 3}
       propertyPath: m_LocalPosition.x
