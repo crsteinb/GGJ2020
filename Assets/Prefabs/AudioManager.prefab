@@ -81,3 +81,15 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: Air Horn
+    clip: {fileID: 8300000, guid: 5d428e5211be349a2ad847fa5f7cd899, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Ta Da
+    clip: {fileID: 8300000, guid: ae2230984e38e4654984d6d4157ff004, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

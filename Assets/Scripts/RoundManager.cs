@@ -131,6 +131,8 @@ public class RoundManager : MonoBehaviour
       currentRound = 0;
     }
 
+    FindObjectOfType<AudioManager>().Play("Music");
+
     remainingTime = Rounds[currentRound].roundDuration;
 
     partsDropper.drop(Rounds[currentRound].partsList);
