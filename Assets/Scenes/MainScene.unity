@@ -1321,6 +1321,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 4573195572141178409}
+    - target: {fileID: 5211560487931847894, guid: 24d9dcbfe109748d8948cae16234120e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: hideWinMenu
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24d9dcbfe109748d8948cae16234120e, type: 3}
 --- !u!114 &1177514002458045576 stripped
