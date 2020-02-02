@@ -44,7 +44,6 @@ public class Slot : MonoBehaviour
       part.gameObject.GetComponent<Draggable>().collidingSlot = gameObject.GetComponent<Slot>();
       highlight();
       heartArea.highlight();
-      AttachPart(part);
     }
   }
 
