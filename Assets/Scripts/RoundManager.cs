@@ -19,6 +19,8 @@ public class RoundManager : MonoBehaviour
 
   public PartsDropper partsDropper;
 
+  public float remainingTime;
+
   // Start is called before the first frame update
   void Start()
   {
@@ -37,10 +39,17 @@ public class RoundManager : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    // TODO write game loop logic (update clock, check for win/loss conditions, start next round, etc...)
+    // update clock
+    remainingTime -= Time.deltaTime;
 
-    // check for game over
-    // GameOver();
+    // check lose condition
+    if (remainingTime < 0.0f)
+    {
+      GameOver();
+    }
+
+    // TODO check win condition
+
   }
 
   public void StartNextRound()
@@ -56,6 +65,8 @@ public class RoundManager : MonoBehaviour
     {
       currentRound = 0;
     }
+
+    remainingTime = Rounds[currentRound].roundDuration;
 
     partsDropper.drop(Rounds[currentRound].partsList);
     StartRound(Instantiate(Rounds[currentRound].leftRobotPrefab, leftRobotHolder.transform), Instantiate(Rounds[currentRound].rightRobotPrefab, rightRobotHolder.transform));
