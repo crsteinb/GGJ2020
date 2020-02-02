@@ -16,12 +16,12 @@ public class PartsDropper : MonoBehaviour
   {
     foreach (var part in partsToDrop)
     {
-      Instantiate(part, new Vector3(Random.Range(-1.0f, 1.0f), 2, gameObject.transform.position.z + Random.Range(-1.0f, 1.0f)), Quaternion.identity);
+      Instantiate(part, new Vector3(Random.Range(-1.0f, 1.0f), 2, gameObject.transform.position.z + Random.Range(0f, 2f)), Quaternion.identity);
     }
   }
   public void drop(GameObject partToDrop)
   {
-    partToDrop.transform.position = new Vector3(Random.Range(-1.0f, 1.0f), 2, gameObject.transform.position.z + Random.Range(-1.0f, 1.0f));
+    partToDrop.transform.position = new Vector3(Random.Range(-1.0f, 1.0f), 2, gameObject.transform.position.z + Random.Range(0f, 2f));
     partToDrop.transform.rotation = Quaternion.identity;
   }
 

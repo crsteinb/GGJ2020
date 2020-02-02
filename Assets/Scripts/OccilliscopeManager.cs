@@ -128,6 +128,84 @@ public class OccilliscopeManager : MonoBehaviour
     }
   }
 
+  public bool CheckShapeMatch() {
+    if (leftRobot_ == null || rightRobot_ == null)
+    {
+      return false;
+    }
 
+    if (isAnybodyFlatlined()) {
+      return false;
+    }
+
+    if (!leftRobot_.allSlotsFull || !rightRobot_.allSlotsFull)
+    {
+      return false;
+    }
+
+    return leftRobot_.currentWaveEnum == rightRobot_.currentWaveEnum;
+  }
+
+  public bool CheckOctaveMatch()
+  {
+    if (leftRobot_ == null || rightRobot_ == null)
+    {
+      return false;
+    }
+    if (!leftRobot_.allSlotsFull || !rightRobot_.allSlotsFull)
+    {
+      return false;
+    }
+
+    if (isAnybodyFlatlined()) {
+      return false;
+    }
+    
+    int leftOctave = Math.Min(Math.Max(leftRobot_.currentOctave, -1), 1);
+    int rightOctave = Math.Min(Math.Max(rightRobot_.currentOctave, -1), 1);
+    if (leftOctave == rightOctave)
+    {
+      return true;
+    }
+
+    return false;
+  }
+
+  public bool CheckPolarityMatch()
+  {
+    if (leftRobot_ == null || rightRobot_ == null)
+    {
+      return false;
+    }
+    if (!leftRobot_.allSlotsFull || !rightRobot_.allSlotsFull)
+    {
+      return false;
+    }
+    if (leftRobot_.currentPolarity == 0 || rightRobot_.currentPolarity == 0)
+    {
+      return false;
+    }
+    int leftPolarity = Math.Min(Math.Max(leftRobot_.currentPolarity, -1), 1);
+    int rightPolarity = Math.Min(Math.Max(rightRobot_.currentPolarity, -1), 1);
+    if (leftPolarity != rightPolarity)
+    {
+      return false;
+    }
+
+    if (isAnybodyFlatlined()) {
+      return false;
+    }
+
+    return true;
+  }
+
+  public bool isAnybodyFlatlined() {
+    if (leftRobot_ == null || rightRobot_ == null)
+    {
+      return false;
+    }
+
+    return leftRobot_.currentPolarity == 0 || rightRobot_.currentPolarity == 0;
+  }
 
 }
