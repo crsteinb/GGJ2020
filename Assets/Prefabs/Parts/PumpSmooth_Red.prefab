@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 343376460708771872}
   m_Layer: 0
-  m_Name: Part7
+  m_Name: PumpSmooth_Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,6 +171,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 818716030121586747, guid: 6d19b2bb3f570465696698847e2a9008,
+        type: 3}
+      propertyPath: PartDescriptor
+      value: 
+      objectReference: {fileID: 11400000, guid: da095ca9cabe04d3ea3dca3c025eb889,
+        type: 2}
     - target: {fileID: 2052677200399268870, guid: 6d19b2bb3f570465696698847e2a9008,
         type: 3}
       propertyPath: m_Name
