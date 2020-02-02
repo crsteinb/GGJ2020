@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TriHighBluePart-NegativeOctaves
   m_EditorClassIdentifier: 
   Waveform: 2
-  LeftPolarity: 3
-  RightPolarity: 3
+  LeftPolarity: 2
+  RightPolarity: 2
   LeftOctave: -2
   RightOctave: -2
