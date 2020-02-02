@@ -133,6 +133,9 @@ public class RoundManager : MonoBehaviour
 
   public void StartRound(Robot leftRobot, Robot rightRobot)
   {
+    // set the side enums based on their configured side in the round descriptor
+    leftRobot.sideEnum = RobotSideEnum.Left;
+    rightRobot.sideEnum = RobotSideEnum.Right;
     if (occilliscopeManager != null)
     {
       occilliscopeManager.ConnectRobots(leftRobot, rightRobot);

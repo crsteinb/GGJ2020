@@ -12,7 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7150e8ba73359401aa495016b1785bf7, type: 3}
   m_Name: Round3
   m_EditorClassIdentifier: 
-  leftRobotPrefab: {fileID: -4510515356876585526, guid: 28820034a28cc4598b6d690074014ca8,
+  leftRobotPrefab: {fileID: 6063818413213072112, guid: 44b0faa67d391440aabee5a21d681e10,
     type: 3}
-  rightRobotPrefab: {fileID: -4510515356876585526, guid: 28820034a28cc4598b6d690074014ca8,
+  rightRobotPrefab: {fileID: 3557644814298591862, guid: f2a1c1ec233e544f0ae75ad6e8e22909,
     type: 3}
+  roundDuration: 90
+  maxPoints: 4000
+  partsList:
+  - {fileID: 3645860482017921587, guid: 262d73e73a8d64e50b0272039fd47b86, type: 3}
+  - {fileID: 3645860482017921587, guid: 15e940ac09ceb4046a157fe752cb7c23, type: 3}
+  - {fileID: 3645860482017921587, guid: 5cd24a5cef6eb47f088c29b7fe95e6bc, type: 3}
+  - {fileID: 3645860482017921587, guid: de9a5aa70966747bcad1a51239b2e226, type: 3}
+  - {fileID: 3645860482017921587, guid: 902362da3eb134ea8bc0be94f4956243, type: 3}
+  - {fileID: 3645860482017921587, guid: ee89ec94077ea4e04897709b3ce80df4, type: 3}
+  - {fileID: 3645860482017921587, guid: 2e4c66a7cdb2e404e93daf5772a252e0, type: 3}
+  - {fileID: 3645860482017921587, guid: 0da1d4b937ab540868f3a229da53652a, type: 3}

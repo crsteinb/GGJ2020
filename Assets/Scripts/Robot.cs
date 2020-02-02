@@ -22,6 +22,8 @@ public class Robot : MonoBehaviour
 
   public List<Slot> Slots;
 
+  public bool allSlotsFull = false;
+
   public void Start()
   {
     foreach (var slot in Slots)
@@ -41,6 +43,8 @@ public class Robot : MonoBehaviour
     int sinCount = 0;
     int squareCount = 0;
     int triangleCount = 0;
+
+    allSlotsFull = true;
 
     // perform the computations for current values
     foreach (var slot in Slots)
@@ -89,6 +93,10 @@ public class Robot : MonoBehaviour
               break;
           }
         }
+      }
+      else
+      {
+        allSlotsFull = false;
       }
     }
 

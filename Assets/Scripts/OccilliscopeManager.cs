@@ -102,6 +102,10 @@ public class OccilliscopeManager : MonoBehaviour
     {
       return;
     }
+    if (!leftRobot_.allSlotsFull || rightRobot_.allSlotsFull)
+    {
+      return;
+    }
     if (leftRobot_.currentPolarity == 0 || rightRobot_.currentPolarity == 0)
     {
       return;

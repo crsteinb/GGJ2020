@@ -2441,11 +2441,13 @@ MonoBehaviour:
   sideEnum: 0
   currentWaveEnum: 0
   StartingOctave: 0
-  StartingPolarity: 1
+  StartingPolarity: 0
   currentOctave: 0
-  currentPolarity: 1
+  currentPolarity: 0
   Slots:
-  - {fileID: 270238891, guid: 34efb9792719a499b8a4c457c1818ebf, type: 3}
+  - {fileID: 1077673592618310463}
+  - {fileID: 4608606476258790535}
+  - {fileID: 3449486388138018125}
 --- !u!1 &8730733985876473499
 GameObject:
   m_ObjectHideFlags: 0
