@@ -12,7 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7150e8ba73359401aa495016b1785bf7, type: 3}
   m_Name: Round2
   m_EditorClassIdentifier: 
-  leftRobotPrefab: {fileID: 633903582929657747, guid: 835154fbdc6e947429300dbb216de16e,
+  leftRobotPrefab: {fileID: 7884862479361822158, guid: 7c7098e8e95d44fa7952617adbf0ffb2,
     type: 3}
-  rightRobotPrefab: {fileID: 633903582929657747, guid: 835154fbdc6e947429300dbb216de16e,
+  rightRobotPrefab: {fileID: 5347759076210929992, guid: 182814342137142788adacaa29d1b9ef,
     type: 3}
+  roundDuration: 5
+  maxPoints: 1000
+  partsList:
+  - {fileID: 3645860482017921587, guid: 2e4c66a7cdb2e404e93daf5772a252e0, type: 3}
+  - {fileID: 3645860482017921587, guid: 0da1d4b937ab540868f3a229da53652a, type: 3}
+  - {fileID: 3645860482017921587, guid: 902362da3eb134ea8bc0be94f4956243, type: 3}
+  - {fileID: 3645860482017921587, guid: 1d5f68460037842ce9dc29a3ee1d3018, type: 3}
+  - {fileID: 3645860482017921587, guid: 4b5f09c6e0d494b7fac4200dc5121ef9, type: 3}
+  - {fileID: 3645860482017921587, guid: 4447983b737d64a369a1933aefaee4b9, type: 3}

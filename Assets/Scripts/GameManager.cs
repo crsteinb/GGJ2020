@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
   {
     hideTitleMenu();
     roundManager.ResetGame();
-    roundManager.StartNextRound();
+    roundManager.EndRound();
   }
 
   public void showTitleMenu()
@@ -45,6 +45,8 @@ public class GameManager : MonoBehaviour
   public void hideGameOverMenu()
   {
     gameOverMenu.gameObject.SetActive(false);
+    roundManager.ResetGame();
+    roundManager.EndRound();
   }
 
   public void showWinMenu()
@@ -55,5 +57,6 @@ public class GameManager : MonoBehaviour
   public void hideWinMenu()
   {
     winMenu.gameObject.SetActive(false);
+    roundManager.EndRound();
   }
 }

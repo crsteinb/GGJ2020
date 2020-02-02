@@ -59,7 +59,7 @@ public class RoundManager : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    // TODO check win condition
+    // check win condition
     if (roundWon)
     {
       if (!roundWonCalled)
@@ -67,6 +67,7 @@ public class RoundManager : MonoBehaviour
         int newPoints = (int)((remainingTime / Rounds[currentRound].roundDuration) * Rounds[currentRound].maxPoints);
         winScoreText.text = "" + newPoints;
         currentScore += newPoints;
+        scoreText.text += "" + currentScore;
         WinRound();
         roundWonCalled = true;
       }
@@ -91,15 +92,18 @@ public class RoundManager : MonoBehaviour
 
   public void RoundWon()
   {
-    roundWon = true;
+    if (gameRunning)
+    {
+      roundWon = true;
+    }
   }
 
   public void ResetGame()
   {
     currentScore = 0;
     currentRound = -1;
+    scoreText.text += "" + currentScore;
     cartsAnimator.SetTrigger(resetGameTrigger);
-    gameRunning = true;
     roundWon = false;
     roundWonCalled = false;
   }
@@ -108,12 +112,6 @@ public class RoundManager : MonoBehaviour
   {
     roundWon = false;
     roundWonCalled = false;
-
-    var parts = FindObjectsOfType<Part>();
-    foreach (var part in parts)
-    {
-      Destroy(part.gameObject);
-    }
 
     if (Rounds.Count == 0)
     {
@@ -135,13 +133,25 @@ public class RoundManager : MonoBehaviour
 
   public void StartRound(Robot leftRobot, Robot rightRobot)
   {
+    if (occilliscopeManager != null)
+    {
+      occilliscopeManager.ConnectRobots(leftRobot, rightRobot);
+    }
+    gameRunning = true;
+  }
+
+  public void EndRound()
+  {
+    gameRunning = false;
     if (cartsAnimator != null)
     {
       cartsAnimator.SetTrigger(endRoundTrigger);
     }
-    if (occilliscopeManager != null)
+
+    var parts = FindObjectsOfType<Part>();
+    foreach (var part in parts)
     {
-      occilliscopeManager.ConnectRobots(leftRobot, rightRobot);
+      Destroy(part.gameObject);
     }
   }
 }
