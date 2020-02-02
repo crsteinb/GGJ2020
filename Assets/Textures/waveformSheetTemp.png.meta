@@ -134,10 +134,10 @@ TextureImporter:
       name: TempSquareWave
       rect:
         serializedVersion: 2
-        x: 75
+        x: 73
         y: 857
-        width: 1770
-        height: 322
+        width: 1774
+        height: 307
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: TempTriangleWave
       rect:
         serializedVersion: 2
-        x: 77
+        x: 73
         y: 461
-        width: 1766
-        height: 322
+        width: 1774
+        height: 307
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: TempSawWave
       rect:
         serializedVersion: 2
-        x: 77
+        x: 73
         y: 65
-        width: 1766
-        height: 313
+        width: 1774
+        height: 307
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

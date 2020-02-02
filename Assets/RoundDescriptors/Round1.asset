@@ -18,7 +18,7 @@ MonoBehaviour:
     type: 3}
   roundDuration: 60
   partsList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 3645860482017921587, guid: 4e0f6cb92485441e4a773f74546f61c9, type: 3}
+  - {fileID: 3645860482017921587, guid: ec05703d04dec4543be032aa2d477bc3, type: 3}
+  - {fileID: 3645860482017921587, guid: 0da1d4b937ab540868f3a229da53652a, type: 3}
+  - {fileID: 3645860482017921587, guid: 4b5f09c6e0d494b7fac4200dc5121ef9, type: 3}

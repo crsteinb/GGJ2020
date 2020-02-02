@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Gear12BluePart-PostiveOctaves
   m_EditorClassIdentifier: 
   Waveform: 0
-  LeftPolarity: 1
-  RightPolarity: 1
-  LeftOctave: 3
-  RightOctave: 3
+  LeftPolarity: 2
+  RightPolarity: 2
+  LeftOctave: 2
+  RightOctave: 2
