@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7150e8ba73359401aa495016b1785bf7, type: 3}
-  m_Name: Round1
+  m_Name: Round3
   m_EditorClassIdentifier: 
-  leftRobotPrefab: {fileID: -8791411418212982803, guid: 766a2bd34f6ea49d7b36d21f9ddd3e01,
+  leftRobotPrefab: {fileID: -4510515356876585526, guid: 28820034a28cc4598b6d690074014ca8,
     type: 3}
-  rightRobotPrefab: {fileID: -8791411418212982803, guid: 766a2bd34f6ea49d7b36d21f9ddd3e01,
+  rightRobotPrefab: {fileID: -4510515356876585526, guid: 28820034a28cc4598b6d690074014ca8,
     type: 3}
