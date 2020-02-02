@@ -16,6 +16,8 @@ public class RoundManager : MonoBehaviour
   public GameObject leftRobotHolder;
   public GameObject rightRobotHolder;
 
+  public PartsDropper partsDropper;
+
   // Start is called before the first frame update
   void Start()
   {
@@ -50,7 +52,8 @@ public class RoundManager : MonoBehaviour
     {
       currentRound = 0;
     }
-    // TODO update the spawn location
+
+    partsDropper.drop(Rounds[currentRound].partsList);
     StartRound(Instantiate(Rounds[currentRound].leftRobotPrefab, leftRobotHolder.transform), Instantiate(Rounds[currentRound].rightRobotPrefab, rightRobotHolder.transform));
   }
 

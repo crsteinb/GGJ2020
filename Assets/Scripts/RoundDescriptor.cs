@@ -10,5 +10,6 @@ public class RoundDescriptor : ScriptableObject
   public Robot rightRobotPrefab;
 
   public float roundDuration = 60.0f;
+  public List<GameObject> partsList = new List<GameObject>();
 
 }
