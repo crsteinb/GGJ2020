@@ -1312,8 +1312,14 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: ClipFuzz
+  - name: ClickFuzz
     clip: {fileID: 8300000, guid: 543fd59b9134a41aa95132cc72acb487, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ClickFuzz Low
+    clip: {fileID: 8300000, guid: daff86d45b2b64d9f9ed217543e5a2a9, type: 3}
     volume: 1
     pitch: 1
     loop: 0
