@@ -19,6 +19,11 @@ public class PartsDropper : MonoBehaviour
       Instantiate(part, new Vector3(Random.Range(-1.0f, 1.0f), 2, gameObject.transform.position.z + Random.Range(-1.0f, 1.0f)), Quaternion.identity);
     }
   }
+  public void drop(GameObject partToDrop)
+  {
+    partToDrop.transform.position = new Vector3(Random.Range(-1.0f, 1.0f), 2, gameObject.transform.position.z + Random.Range(-1.0f, 1.0f));
+    partToDrop.transform.rotation = Quaternion.identity;
+  }
 
   void OnMouseDown()
   {
