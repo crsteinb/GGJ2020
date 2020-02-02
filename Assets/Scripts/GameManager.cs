@@ -39,6 +39,8 @@ public class GameManager : MonoBehaviour
 
   public void showGameOverMenu()
   {
+    FindObjectOfType<AudioManager>().Stop("Music");
+    FindObjectOfType<AudioManager>().Play("Air Horn");
     gameOverMenu.gameObject.SetActive(true);
     titleMenu.gameObject.SetActive(false);
   }
@@ -52,6 +54,8 @@ public class GameManager : MonoBehaviour
 
   public void showWinMenu()
   {
+    FindObjectOfType<AudioManager>().Stop("Music");
+    FindObjectOfType<AudioManager>().Play("Ta Da");
     winMenu.gameObject.SetActive(true);
   }
 
