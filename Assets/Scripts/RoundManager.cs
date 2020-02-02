@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class RoundManager : MonoBehaviour
 {
-
+  public Action GameOver;
   OccilliscopeManager occilliscopeManager;
 
   public List<RoundDescriptor> Rounds;
@@ -37,6 +38,9 @@ public class RoundManager : MonoBehaviour
   void Update()
   {
     // TODO write game loop logic (update clock, check for win/loss conditions, start next round, etc...)
+
+    // check for game over
+    // GameOver();
   }
 
   public void StartNextRound()
