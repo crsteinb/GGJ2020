@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4477429134764434204}
   - component: {fileID: 4861636537727670570}
   - component: {fileID: 1172213290925467091}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BleedingHearts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
