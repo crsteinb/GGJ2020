@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 1320860872}
   - component: {fileID: 5649087428366568862}
   m_Layer: 0
-  m_Name: Part
+  m_Name: Puck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 626f2cb9b71f348a78da470b21001589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collidingSlot: {fileID: 0}
 --- !u!54 &1320860875
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -167,6 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 626f2cb9b71f348a78da470b21001589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collidingSlot: {fileID: 0}
 --- !u!114 &5649087428366568862
 MonoBehaviour:
   m_ObjectHideFlags: 0
