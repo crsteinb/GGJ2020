@@ -1095,6 +1095,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Music
+    clip: {fileID: 8300000, guid: f31b7a7a440014e9f9e7d7b934d28d46, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!1001 &565014696812043896
 PrefabInstance:
   m_ObjectHideFlags: 0

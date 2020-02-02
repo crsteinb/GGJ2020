@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
 
   public void StartGame()
   {
+    FindObjectOfType<AudioManager>().Play("Music");
     hideTitleMenu();
     roundManager.ResetGame();
     roundManager.EndRound();
