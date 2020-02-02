@@ -16,12 +16,12 @@ MonoBehaviour:
     type: 3}
   rightRobotPrefab: {fileID: 5347759076210929992, guid: 182814342137142788adacaa29d1b9ef,
     type: 3}
-  roundDuration: 60
+  roundDuration: 90
   maxPoints: 2000
   partsList:
   - {fileID: 3645860482017921587, guid: 2e4c66a7cdb2e404e93daf5772a252e0, type: 3}
+  - {fileID: 3645860482017921587, guid: da22bc2968b3d41cda0564473aef693f, type: 3}
   - {fileID: 3645860482017921587, guid: 0da1d4b937ab540868f3a229da53652a, type: 3}
-  - {fileID: 3645860482017921587, guid: 902362da3eb134ea8bc0be94f4956243, type: 3}
-  - {fileID: 3645860482017921587, guid: 1d5f68460037842ce9dc29a3ee1d3018, type: 3}
-  - {fileID: 3645860482017921587, guid: 4b5f09c6e0d494b7fac4200dc5121ef9, type: 3}
+  - {fileID: 3645860482017921587, guid: b6381ef8b5483479bb3419ac2a4dded3, type: 3}
+  - {fileID: 3645860482017921587, guid: b6381ef8b5483479bb3419ac2a4dded3, type: 3}
   - {fileID: 3645860482017921587, guid: 4447983b737d64a369a1933aefaee4b9, type: 3}

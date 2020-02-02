@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9335f7fff5d784e1282aee7f27b3c9a7, type: 3}
-  m_Name: TriLowRedPart-NegativeOctaves
+  m_Name: PumpMedRedPart-NegativeOctaves
   m_EditorClassIdentifier: 
-  Waveform: 2
+  Waveform: 1
   LeftPolarity: -1
   RightPolarity: -1
-  LeftOctave: -1
-  RightOctave: -1
+  LeftOctave: -2
+  RightOctave: -2

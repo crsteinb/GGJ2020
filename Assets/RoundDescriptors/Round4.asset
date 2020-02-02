@@ -16,17 +16,17 @@ MonoBehaviour:
     type: 3}
   rightRobotPrefab: {fileID: 510098888500369364, guid: 5d89381c67aad45a1bc65683e5a7aa07,
     type: 3}
-  roundDuration: 90
+  roundDuration: 120
   maxPoints: 8000
   partsList:
-  - {fileID: 3645860482017921587, guid: 5cd24a5cef6eb47f088c29b7fe95e6bc, type: 3}
-  - {fileID: 3645860482017921587, guid: ee89ec94077ea4e04897709b3ce80df4, type: 3}
-  - {fileID: 3645860482017921587, guid: 262d73e73a8d64e50b0272039fd47b86, type: 3}
-  - {fileID: 3645860482017921587, guid: 902362da3eb134ea8bc0be94f4956243, type: 3}
-  - {fileID: 3645860482017921587, guid: 15e940ac09ceb4046a157fe752cb7c23, type: 3}
-  - {fileID: 3645860482017921587, guid: 76478562d3fd544ac96d43ae2999e437, type: 3}
-  - {fileID: 3645860482017921587, guid: 4b5f09c6e0d494b7fac4200dc5121ef9, type: 3}
   - {fileID: 3645860482017921587, guid: 1d5f68460037842ce9dc29a3ee1d3018, type: 3}
+  - {fileID: 3645860482017921587, guid: de9a5aa70966747bcad1a51239b2e226, type: 3}
+  - {fileID: 3645860482017921587, guid: 5cd24a5cef6eb47f088c29b7fe95e6bc, type: 3}
+  - {fileID: 3645860482017921587, guid: 76478562d3fd544ac96d43ae2999e437, type: 3}
+  - {fileID: 3645860482017921587, guid: da22bc2968b3d41cda0564473aef693f, type: 3}
+  - {fileID: 3645860482017921587, guid: ee89ec94077ea4e04897709b3ce80df4, type: 3}
+  - {fileID: 3645860482017921587, guid: 1d5f68460037842ce9dc29a3ee1d3018, type: 3}
+  - {fileID: 3645860482017921587, guid: 15e940ac09ceb4046a157fe752cb7c23, type: 3}
   - {fileID: 3645860482017921587, guid: 4a81e128631394367ad8bb9676f7a96d, type: 3}
   - {fileID: 3645860482017921587, guid: da22bc2968b3d41cda0564473aef693f, type: 3}
   - {fileID: 3645860482017921587, guid: de9a5aa70966747bcad1a51239b2e226, type: 3}

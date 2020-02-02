@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 633903582929657747, guid: 835154fbdc6e947429300dbb216de16e,
         type: 3}
       propertyPath: StartingOctave
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 633903582929657747, guid: 835154fbdc6e947429300dbb216de16e,
         type: 3}
