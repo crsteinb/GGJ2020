@@ -102,7 +102,7 @@ public class OccilliscopeManager : MonoBehaviour
     {
       return;
     }
-    if (!leftRobot_.allSlotsFull || rightRobot_.allSlotsFull)
+    if (!leftRobot_.allSlotsFull || !rightRobot_.allSlotsFull)
     {
       return;
     }
