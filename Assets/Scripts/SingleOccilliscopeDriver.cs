@@ -9,6 +9,9 @@ public class SingleOccilliscopeDriver : MonoBehaviour
   private int squareTrigger = Animator.StringToHash("SquareWave");
   private int sawTrigger = Animator.StringToHash("SawWave");
   private int triangleTrigger = Animator.StringToHash("TriangleWave");
+  private int cogTrigger = Animator.StringToHash("CogWave");
+  private int waveTrigger = Animator.StringToHash("WaveWave");
+  private int omegaTrigger = Animator.StringToHash("OmegaWave");
   private int polarityInt = Animator.StringToHash("Polarity");
 
   public void Awake()
@@ -41,6 +44,15 @@ public class SingleOccilliscopeDriver : MonoBehaviour
         break;
       case WaveformEnum.Saw:
         animator.SetTrigger(sawTrigger);
+        break;
+      case WaveformEnum.Cog:
+        animator.SetTrigger(cogTrigger);
+        break;
+      case WaveformEnum.Wave:
+        animator.SetTrigger(waveTrigger);
+        break;
+      case WaveformEnum.Omega:
+        animator.SetTrigger(omegaTrigger);
         break;
       default:
         Debug.Log("Invalid current waveform on robot for single occilliscope");

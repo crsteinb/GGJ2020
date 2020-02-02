@@ -94,15 +94,38 @@ public class Robot : MonoBehaviour
 
     if (sinCount > 0)
     {
-      // TODO check for combination waves with Square and Triangle
-
-      currentWaveEnum = WaveformEnum.Sin;
+      // check for combination waves with Square and Triangle
+      if (squareCount > 0)
+      {
+        if (triangleCount > 0)
+        {
+          currentWaveEnum = WaveformEnum.Omega;
+        }
+        else
+        {
+          currentWaveEnum = WaveformEnum.Cog;
+        }
+      }
+      else if (triangleCount > 0)
+      {
+        currentWaveEnum = WaveformEnum.Wave;
+      }
+      else
+      {
+        currentWaveEnum = WaveformEnum.Sin;
+      }
     }
     else if (squareCount > 0)
     {
-      // TODO check for combination waves with Triangle
-
-      currentWaveEnum = WaveformEnum.Square;
+      // check for combination waves with Triangle
+      if (triangleCount > 0)
+      {
+        currentWaveEnum = WaveformEnum.Saw;
+      }
+      else
+      {
+        currentWaveEnum = WaveformEnum.Square;
+      }
     }
     else if (triangleCount > 0)
     {
