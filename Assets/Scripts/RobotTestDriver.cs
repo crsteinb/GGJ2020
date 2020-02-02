@@ -10,4 +10,11 @@ public class RobotTestDriver : MonoBehaviour
 
   public List<Part> parts;
 
+  public RoundManager roundManager;
+
+  public void Start()
+  {
+    roundManager.StartRound(leftRobot, rightRobot);
+  }
+
 }

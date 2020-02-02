@@ -65,11 +65,15 @@ public class OccilliscopeManager : MonoBehaviour
     if (robot == leftRobot_)
     {
       // update the single left and triple left occilliscopes
+      LeftSingleOccilliscope.UpdateScope(robot);
+      LeftTripleOccilliscope.UpdateScope(robot);
     }
 
     if (robot == rightRobot_)
     {
       // update the single right and triple right occilliscopes
+      RightSingleOccilliscope.UpdateScope(robot);
+      RightTripleOccilliscope.UpdateScope(robot);
     }
   }
 

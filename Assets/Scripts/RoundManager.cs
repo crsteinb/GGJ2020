@@ -56,8 +56,11 @@ public class RoundManager : MonoBehaviour
 
   public void StartRound(Robot leftRobot, Robot rightRobot)
   {
-    cartsAnimator.SetTrigger(endRoundTrigger);
-    if (occilliscopeManager)
+    if (cartsAnimator != null)
+    {
+      cartsAnimator.SetTrigger(endRoundTrigger);
+    }
+    if (occilliscopeManager != null)
     {
       occilliscopeManager.ConnectRobots(leftRobot, rightRobot);
     }

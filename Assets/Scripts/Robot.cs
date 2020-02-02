@@ -16,16 +16,27 @@ public class Robot : MonoBehaviour
 
   public int StartingPolarity = 1;
 
-  private int currentOctave_ = 0;
+  public int currentOctave = 0;
 
-  private int currentPolarity_ = 1;
+  public int currentPolarity = 1;
 
   public List<Slot> Slots;
 
+  public void Start()
+  {
+    foreach (var slot in Slots)
+    {
+      slot.PartChanged += ComputeWaveform;
+    }
+
+    // compute initial waveform stats
+    ComputeWaveform();
+  }
+
   public void ComputeWaveform()
   {
-    currentOctave_ = StartingOctave;
-    currentPolarity_ = StartingPolarity;
+    currentOctave = StartingOctave;
+    currentPolarity = StartingPolarity;
 
     int sinCount = 0;
     int squareCount = 0;
@@ -39,8 +50,8 @@ public class Robot : MonoBehaviour
       {
         if (sideEnum == RobotSideEnum.Left)
         {
-          currentOctave_ += currentPart.PartDescriptor.LeftOctave;
-          currentPolarity_ += currentPart.PartDescriptor.LeftPolarity;
+          currentOctave += currentPart.PartDescriptor.LeftOctave;
+          currentPolarity += currentPart.PartDescriptor.LeftPolarity;
           switch (currentPart.PartDescriptor.Waveform)
           {
             case WaveformEnum.Sin:
@@ -60,8 +71,8 @@ public class Robot : MonoBehaviour
 
         if (sideEnum == RobotSideEnum.Right)
         {
-          currentOctave_ += currentPart.PartDescriptor.RightOctave;
-          currentPolarity_ += currentPart.PartDescriptor.RightPolarity;
+          currentOctave += currentPart.PartDescriptor.RightOctave;
+          currentPolarity += currentPart.PartDescriptor.RightPolarity;
           switch (currentPart.PartDescriptor.Waveform)
           {
             case WaveformEnum.Sin:

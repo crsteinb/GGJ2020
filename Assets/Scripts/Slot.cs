@@ -18,31 +18,41 @@ public class Slot : MonoBehaviour
   public void AttachPart(Part partToAttach)
   {
     currentPart_ = partToAttach;
-    if(partToAttach != null) {
+    if (partToAttach != null)
+    {
       partToAttach.transform.position = transform.position;
       partToAttach.transform.rotation = transform.rotation;
     }
 
-    if (PartChanged != null) {
+    if (PartChanged != null)
+    {
       // trigger the part change event
       PartChanged();
     }
+    else
+    {
+      Debug.LogError("No PartChanged callbacks registered for part");
+    }
   }
 
-  private void OnTriggerEnter(Collider other) {
+  private void OnTriggerEnter(Collider other)
+  {
     var part = other.gameObject.GetComponent<Part>();
-    if(part != null) {
+    if (part != null)
+    {
       FindObjectOfType<AudioManager>().Play("ClickFuzz");
       part.gameObject.GetComponent<Draggable>().collidingSlot = gameObject.GetComponent<Slot>();
       highlight();
       heartArea.highlight();
-      AttachPart(part); 
+      AttachPart(part);
     }
   }
 
-  private void OnTriggerExit(Collider other) {
+  private void OnTriggerExit(Collider other)
+  {
     var part = other.gameObject.GetComponent<Part>();
-    if(part != null) {
+    if (part != null)
+    {
       FindObjectOfType<AudioManager>().Play("ClickFuzz Low");
       unHighlight();
       heartArea.unHighlight();
@@ -50,12 +60,14 @@ public class Slot : MonoBehaviour
     }
   }
 
-  public void highlight() {
-        gameObject.GetComponent<Renderer>().materials[0].color = Color.green;
-    }
+  public void highlight()
+  {
+    gameObject.GetComponent<Renderer>().materials[0].color = Color.green;
+  }
 
-    public void unHighlight() {
-        gameObject.GetComponent<Renderer>().materials[0].color = Color.white;
-    }
+  public void unHighlight()
+  {
+    gameObject.GetComponent<Renderer>().materials[0].color = Color.white;
+  }
 
 }

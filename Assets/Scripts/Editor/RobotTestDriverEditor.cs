@@ -20,16 +20,16 @@ public class RobotTestDriverEditor : Editor
     {
       if (testDriver.leftRobot != null && testDriver.leftRobot.Slots.Count > slotToAttach)
       {
-        if (GUILayout.Button("Attach part to Left robot slot"))
+        if (GUILayout.Button("Attach part " + partToAttach + " to Left robot slot " + slotToAttach))
         {
-          testDriver.leftRobot.Slots[0].AttachPart(testDriver.parts[0]);
+          testDriver.leftRobot.Slots[slotToAttach].AttachPart(testDriver.parts[partToAttach]);
         }
       }
       if (testDriver.rightRobot != null && testDriver.rightRobot.Slots.Count > slotToAttach)
       {
-        if (GUILayout.Button("Attach Test Part 1 To Right Slot 1"))
+        if (GUILayout.Button("Attach part " + partToAttach + " to Right robot slot " + slotToAttach))
         {
-          testDriver.rightRobot.Slots[0].AttachPart(testDriver.parts[0]);
+          testDriver.rightRobot.Slots[slotToAttach].AttachPart(testDriver.parts[partToAttach]);
         }
       }
     }

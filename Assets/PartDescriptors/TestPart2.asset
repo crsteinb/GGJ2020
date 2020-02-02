@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TestPart2
   m_EditorClassIdentifier: 
   Waveform: 0
-  LeftPolarity: 1
-  RightPolarity: -1
-  LeftOctave: -1
+  LeftPolarity: -1
+  RightPolarity: 1
+  LeftOctave: -2
   RightOctave: 1
