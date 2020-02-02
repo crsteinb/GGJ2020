@@ -9,4 +9,6 @@ public class RoundDescriptor : ScriptableObject
   public Robot leftRobotPrefab;
   public Robot rightRobotPrefab;
 
+  public float roundDuration = 60.0f;
+
 }

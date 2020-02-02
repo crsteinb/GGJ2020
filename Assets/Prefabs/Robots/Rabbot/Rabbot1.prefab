@@ -1482,7 +1482,7 @@ MonoBehaviour:
   currentOctave: 0
   currentPolarity: 1
   Slots:
-  - {fileID: 270238891, guid: 34efb9792719a499b8a4c457c1818ebf, type: 3}
+  - {fileID: 6490134788195384267}
 --- !u!1 &8387853573050697869
 GameObject:
   m_ObjectHideFlags: 0

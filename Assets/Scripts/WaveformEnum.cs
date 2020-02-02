@@ -9,5 +9,8 @@ public enum WaveformEnum
   Sin,
   Square,
   Triangle,
-  Saw
+  Saw,
+  Cog,
+  Wave,
+  Omega
 }
