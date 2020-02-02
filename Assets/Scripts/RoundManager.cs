@@ -82,6 +82,12 @@ public class RoundManager : MonoBehaviour
     remainingTime -= Time.deltaTime;
     timerText.text = "" + (int)remainingTime;
 
+    if (remainingTime < 10f) {
+      timerText.color = UnityEngine.Color.red;
+    } else {
+      timerText.color = UnityEngine.Color.white;
+    }
+
     // check lose condition
     if (remainingTime < 0.0f)
     {
