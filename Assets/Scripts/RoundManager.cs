@@ -13,7 +13,6 @@ public class RoundManager : MonoBehaviour
   public Animator cartsAnimator;
   private int endRoundTrigger = Animator.StringToHash("EndRound");
 
-
   public GameObject leftRobotHolder;
   public GameObject rightRobotHolder;
 
