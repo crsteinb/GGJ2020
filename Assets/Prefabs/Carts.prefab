@@ -40,6 +40,8 @@ GameObject:
   m_Component:
   - component: {fileID: 565014697502184132}
   - component: {fileID: -3431185110667066732}
+  - component: {fileID: 795904395}
+  - component: {fileID: 795904396}
   m_Layer: 0
   m_Name: Carts
   m_TagString: Untagged
@@ -82,6 +84,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &795904395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565014697502184131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8e906c4b59274be6888ecbcfbd29397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &795904396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565014697502184131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a45e8625e5234f08afbd24ff1137755, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roundManager: {fileID: 0}
 --- !u!1 &6767528849664840371
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,6 +281,32 @@ PrefabInstance:
       propertyPath: m_Name
       value: RobotCart
       objectReference: {fileID: 0}
+    - target: {fileID: 2309627704133248489, guid: 59a75b87d0b104be89086306cb05987e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309627704133248489, guid: 59a75b87d0b104be89086306cb05987e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309627704133248489, guid: 59a75b87d0b104be89086306cb05987e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034984162311564524, guid: 59a75b87d0b104be89086306cb05987e,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -5260168181538223484, guid: b1b86a52c69022f4da4982ce9b68f8ca,
+        type: 3}
+    - target: {fileID: 5858213060963056194, guid: 59a75b87d0b104be89086306cb05987e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 78fafb805a183d440b67dfdbdaee6056, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59a75b87d0b104be89086306cb05987e, type: 3}
 --- !u!4 &8199229232856659260 stripped

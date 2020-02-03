@@ -245,7 +245,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3250216403589298225
 RectTransform:
   m_ObjectHideFlags: 0
@@ -547,7 +547,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Fix the broken hearts of robot lovers to get them back on the same wave
-    length.\nEach part has a waveform, an octive modifier and a polarity modifier.
+    length.\nEach part has a waveform, an octave modifier and a polarity modifier.
     Find the combination that will bring the two robot lovers in sync. \nMixing basic
     waveforms may produce new waveform types. Experimentation is key!"
 --- !u!1 &3250216404523139699
@@ -615,7 +615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.9529412}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6862745}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -737,7 +737,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.08380258, y: 0.54158336}
   m_AnchorMax: {x: 0.91965675, y: 1}
-  m_AnchoredPosition: {x: -1.6, y: 8}
+  m_AnchoredPosition: {x: -1.5999756, y: 8}
   m_SizeDelta: {x: 20.9, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3575665199103617358

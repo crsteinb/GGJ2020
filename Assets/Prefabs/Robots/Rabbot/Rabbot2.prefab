@@ -896,7 +896,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 20.03, z: 1.0000002}
+  m_Size: {x: 1.0000001, y: 150, z: 1.0000002}
   m_Center: {x: -0.000001847744, y: -0.0000019073486, z: -0.00000008940697}
 --- !u!114 &843307681535644006
 MonoBehaviour:
@@ -1019,7 +1019,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 20.03, z: 1.0000002}
+  m_Size: {x: 1.0000001, y: 150, z: 1.0000002}
   m_Center: {x: -0.000001847744, y: -0.0000019073486, z: -0.00000008940697}
 --- !u!114 &4105777109054645200
 MonoBehaviour:
@@ -1980,6 +1980,7 @@ MonoBehaviour:
   Slots:
   - {fileID: 4105777109054645200}
   - {fileID: 843307681535644006}
+  allSlotsFull: 0
 --- !u!1 &8730733985876473499
 GameObject:
   m_ObjectHideFlags: 0

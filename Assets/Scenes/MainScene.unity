@@ -461,37 +461,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18f48dedde71d46b296a13af4b889a0b, type: 3}
---- !u!1 &795904393 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 565014697502184131, guid: f35578ae330764a91b9743f0d59b7685,
-    type: 3}
-  m_PrefabInstance: {fileID: 565014696812043896}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &795904395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 795904393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8e906c4b59274be6888ecbcfbd29397, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &795904396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 795904393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a45e8625e5234f08afbd24ff1137755, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roundManager: {fileID: 253904512}
 --- !u!1001 &828733914
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1166,6 +1135,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 795904396, guid: f35578ae330764a91b9743f0d59b7685, type: 3}
+      propertyPath: roundManager
+      value: 
+      objectReference: {fileID: 253904512}
     - target: {fileID: 565014697502184131, guid: f35578ae330764a91b9743f0d59b7685,
         type: 3}
       propertyPath: m_Name
@@ -1331,6 +1304,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 300387344, guid: 549395e7cb7dd4e8d94da071224310f8, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 275525880019069899, guid: 549395e7cb7dd4e8d94da071224310f8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1530,51 +1507,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Win Menu
       objectReference: {fileID: 0}
-    - target: {fileID: 5211560487570233036, guid: 24d9dcbfe109748d8948cae16234120e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5211560487931847894, guid: 24d9dcbfe109748d8948cae16234120e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5211560487931847894, guid: 24d9dcbfe109748d8948cae16234120e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 4573195572141178409}
-    - target: {fileID: 5211560487931847894, guid: 24d9dcbfe109748d8948cae16234120e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: hideWinMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 5211560487931847894, guid: 24d9dcbfe109748d8948cae16234120e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5211560487931847894, guid: 24d9dcbfe109748d8948cae16234120e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5211560487931847894, guid: 24d9dcbfe109748d8948cae16234120e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 253904512}
-    - target: {fileID: 5211560487931847894, guid: 24d9dcbfe109748d8948cae16234120e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: StartNextRound
-      objectReference: {fileID: 0}
-    - target: {fileID: 5211560487931847894, guid: 24d9dcbfe109748d8948cae16234120e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24d9dcbfe109748d8948cae16234120e, type: 3}
 --- !u!114 &1177514002458045576 stripped
@@ -1600,11 +1537,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Title Menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 3250216403589298221, guid: c8266f373ec164e5b8b0c5e4258aea81,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3250216403589298225, guid: c8266f373ec164e5b8b0c5e4258aea81,
         type: 3}
@@ -2035,11 +1967,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameOver Menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 4789994061444997740, guid: e91dc49b9cdcd43ef8029e35680d3847,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4789994061620482166, guid: e91dc49b9cdcd43ef8029e35680d3847,
         type: 3}

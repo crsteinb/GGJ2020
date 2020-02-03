@@ -108,7 +108,7 @@ public class RoundManager : MonoBehaviour
   {
     currentScore = 0;
     currentRound = -1;
-    scoreText.text += "" + currentScore;
+    scoreText.text = "" + currentScore;
     cartsAnimator.SetTrigger(resetGameTrigger);
     roundWon = false;
     roundWonCalled = false;

@@ -16,7 +16,7 @@ MonoBehaviour:
     type: 3}
   rightRobotPrefab: {fileID: 3203895926607189843, guid: 19560d747e5df45168d5c00b1c760272,
     type: 3}
-  roundDuration: 60
+  roundDuration: 75
   maxPoints: 1000
   partsList:
   - {fileID: 3645860482017921587, guid: 4e0f6cb92485441e4a773f74546f61c9, type: 3}
